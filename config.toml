@@ -1,0 +1,4 @@
+baseURL = 'http://fetzverse.com/'
+languageCode = 'en-us'
+title = 'Fetzverse'
+theme = 'PaperMod'
