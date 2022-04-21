@@ -14,10 +14,9 @@
     padding: 12px 0;
 }
 
-.profile img {
+.profile iframe {
     display: inline-table;
     border-radius: 50%;
-    pointer-events: none;
 }
 
 .buttons {

@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="http://fetzverse.com/tags/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ed52a04cba0843fef8297e018b15e8a32a989ea4415133cb8bf77414d3815f7b.css" integrity="sha256-7VKgTLoIQ/74KX4BixXooyqYnqRBUTPLi/d0FNOBX3s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1a782053be16b7f51f6db08dd19ab5915fdfd8b7ef6103d16b9b31367dfc198b.css" integrity="sha256-GnggU74Wt/UfbbCN0Zq1kV/f2LfvYQPRa5sxNn38GYs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://fetzverse.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://fetzverse.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://fetzverse.com/favicon-32x32.png">
@@ -24,6 +24,34 @@
         #theme-toggle,
         .top-link {
             display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
         }
 
     </style>
@@ -42,6 +70,10 @@
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
     }
 
 </script>
@@ -49,7 +81,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://fetzverse.com/" accesskey="h" title="Fetzverse (Alt + H)">Fetzverse</a>
+            <a href="http://fetzverse.com" accesskey="h" title="Fetzverse (Alt + H)">Fetzverse</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -87,7 +119,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="http://fetzverse.com/">Fetzverse</a></span>
+    <span>&copy; 2022 <a href="http://fetzverse.com">Fetzverse</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

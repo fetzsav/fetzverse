@@ -22,9 +22,22 @@
             {{- end }}
             <img src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}"
                 height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                
         {{- else }}
-        <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
-            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        <!-- iframe added and image commented -->
+        <!-- <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" /> -->
+            <iframe
+            width="150px "
+            height="150px"
+            src="https://goofballs.finemints.com/nft/4825.html"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="true"
+            frameborder="0"
+
+            sandbox="allow-scripts"
+            ></iframe>
+
         {{- end }}
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>

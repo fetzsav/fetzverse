@@ -1,10 +1,10 @@
-baseURL: http://fetzverse.com/
+baseURL: http://fetzverse.com
 languageCode: en-us
 title: Fetzverse
 theme: PaperMod
 params:
    homeInfoParams:
-      Title: 'stdout-Helo World!'
+      Title: '👋Hi'
    socialIcons:
         - name: twitter
           url: "https://twitter.com/fetzeth"
@@ -13,3 +13,16 @@ params:
    ShowShareButtons: true
 
    ShowBreadCrumbs: true
+   profileMode:
+    enabled: true # needs to be explicitly set
+    title: Fetzverse
+    subtitle: "Where Fetzer writes about anything related to Fetzer"
+    imageUrl: "avatar.gif"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      # - name: Tags
+      #   url: tags
