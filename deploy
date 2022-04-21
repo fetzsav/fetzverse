@@ -1,0 +1,5 @@
+#!/bin/sh
+
+hugo && rsync -avz --delete public/ fetzverse:~/www/fetzverse.com/public_html
+
+exit 0

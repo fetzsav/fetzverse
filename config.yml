@@ -1,0 +1,15 @@
+baseURL: http://fetzverse.com/
+languageCode: en-us
+title: Fetzverse
+theme: PaperMod
+params:
+   homeInfoParams:
+      Title: Hello :)
+   socialIcons:
+        - name: twitter
+          url: "https://twitter.com/fetzeth"
+        - name: RsS
+          url: "index.xml"
+   ShowShareButtons: true
+
+   ShowBreadCrumbs: true
