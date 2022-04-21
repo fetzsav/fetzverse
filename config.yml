@@ -4,7 +4,7 @@ title: Fetzverse
 theme: PaperMod
 params:
    homeInfoParams:
-      Title: Hello :)
+      Title: 'stdout-Helo World!'
    socialIcons:
         - name: twitter
           url: "https://twitter.com/fetzeth"
