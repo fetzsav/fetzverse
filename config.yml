@@ -1,4 +1,4 @@
-baseURL: http://fetzverse.com
+baseURL: https://fetzverse.com
 languageCode: en-us
 title: Fetzverse
 theme: PaperMod
@@ -16,7 +16,7 @@ params:
    profileMode:
     enabled: true # needs to be explicitly set
     title: Fetzverse
-    subtitle: "Where Fetzer writes about anything related to Fetzer"
+    subtitle: "A blog full of worthless opinions, coding, and whatever else..."
     imageUrl: "avatar.gif"
     imageWidth: 120
     imageHeight: 120
@@ -24,5 +24,3 @@ params:
     buttons:
       - name: Posts
         url: posts
-      # - name: Tags
-      #   url: tags

@@ -20,24 +20,30 @@
                     {{- $img = $img.Resize "150x150" }}
                 {{- end }}
             {{- end }}
-            <img src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}"
-                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
-                
+            <!-- <img src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" /> -->
+                <iframe
+width="150px"
+height="150px"
+src="https://goofballs.finemints.com/nft/4825.html"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen="true"
+frameborder="0"
+sandbox="allow-scripts"
+></iframe>
         {{- else }}
-        <!-- iframe added and image commented -->
         <!-- <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" /> -->
-            <iframe
-            width="150px "
-            height="150px"
-            src="https://goofballs.finemints.com/nft/4825.html"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="true"
-            frameborder="0"
 
-            sandbox="allow-scripts"
-            ></iframe>
-
+<iframe
+width="150px"
+height="150px"
+src="https://goofballs.finemints.com/nft/4825.html"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen="true"
+frameborder="0"
+sandbox="allow-scripts"
+></iframe>
         {{- end }}
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>
@@ -51,6 +57,10 @@
                 <span class="button-inner">{{ .name | title }}</span>
             </a>
             {{- end }}
+            
+            <a class="button-sm" href="http://blokd.chat" rel="noopener" title="BlokdChat">
+                <span class="button-inner">Blokd.Chat</span>
+            </a>
         </div>
         {{- end }}
     </div>

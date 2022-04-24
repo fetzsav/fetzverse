@@ -21,7 +21,8 @@
 
 .buttons {
     flex-wrap: wrap;
-    max-width: 400px;
+    flex-direction: column;
+    max-width: 250px;
     margin: 0 auto;
 }
 
@@ -30,6 +31,16 @@
     border-radius: var(--radius);
     margin: 8px;
     padding: 6px;
+    transition: transform 0.1s;
+}
+
+.button-sm {
+    background: var(--tertiary);
+    opacity: 50%;
+    border-radius: var(--radius);
+    margin: 12px;
+    padding: 2px;
+    font-size:large;
     transition: transform 0.1s;
 }
 
