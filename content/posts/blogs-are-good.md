@@ -18,7 +18,7 @@ At the time of writing this article, my mindset towards blogging has changed. I'
 2. I *wanted* to find cool blogs to read
 3. I *wanted* to find like-minded individuals
 
-I do not think I am the only persontrueou *want*, I urge you to actually consider this possibility and make it a reality, especially if you are *(wasting time)* on  social media. The best part about having a blog that you do not have to quit using social media. I expect that having a blog will not only increase my social media engagement and statistics, but also revamp the way I use the apps in a more productive manner.
+I urge you to actually consider this possibility and make it a reality, especially if you are *(wasting time)* on  social media. The best part about having a blog that you do not have to quit using social media. I expect that having a blog will not only increase my social media engagement and statistics, but also revamp the way I use the apps in a more productive manner.
 
 ## Plans for This Blog
 Thankfully, I have finally mustered up enough strength to create **my own blog**. There is a lot more that goes into a blog than setting it up and creating the first post though. (Which has already proven it's challenges). Firstly, I feel slightly more fulfillment every day thanks to this wonderful blog of mine. There is a new sense of ownership in the online world that is incomparable to any Twitter or Instagram profile. This was the largest step in the journey of having my own blog, which leaves me the opportunity to write about anything I want at anytime I want. There are times when I have felt creatively inclined to write content or tutorials, but have not had the medium to do so. Problem solved.
