@@ -6,7 +6,16 @@
     <description>Recent content on Fetzverse</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fetzverse.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fetzverse.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Twitter&#39;s Powerful API - Too Powerful?</title>
+      <link>https://fetzverse.com/posts/powerful-twitter/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fetzverse.com/posts/powerful-twitter/</guid>
+      <description>Twitter has been a recent topic of controversial discussion. With Elon Musk&amp;rsquo;s offer to buy the platform being accepted by the board of directors, it has left many Twitter users waiting on the edge of their seats, whether in a good or bad way. This is not what we will be talking about today though. Unrelated to this recent debacle, Twitter has undergone some other major changes to their platform. More specifically, I am referring to the new Twitter API&amp;hellip; coined as &amp;lsquo;Twitter API V2&amp;rsquo;.</description>
+    </item>
+    
     <item>
       <title>Welcome to The World of Blogging</title>
       <link>https://fetzverse.com/posts/blogs-are-good/</link>
