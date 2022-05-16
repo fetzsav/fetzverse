@@ -54,13 +54,17 @@ sandbox="allow-scripts"
         <div class="buttons">
             {{- range . }}
             <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
-                <span class="button-inner">{{ .name | title }}</span>
+                <span class="button-inner">View {{ .name | title }} 👀</span>
             </a>
             {{- end }}
             
-            <a class="button-sm" href="http://blokd.chat" rel="noopener" title="BlokdChat">
+            <!-- <a class="button-sm" href="http://blokd.chat" rel="noopener" title="BlokdChat">
                 <span class="button-inner">Blokd.Chat</span>
-            </a>
+            </a> -->
+        </div>
+
+        <div class="newsletter">
+            {{- partial "quickletter.html" }}
         </div>
         {{- end }}
     </div>

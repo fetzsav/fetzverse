@@ -2,8 +2,9 @@ baseURL: https://fetzverse.com
 languageCode: en-us
 title: Fetzverse
 theme: PaperMod
-googleAnalytics: "G-BM7BRT6E65"
+googleAnalytics: "G-GPWZ90MVWH"
 params:
+   ShowNewsLetter: true
    homeInfoParams:
       Title: '👋Hi'
    socialIcons:

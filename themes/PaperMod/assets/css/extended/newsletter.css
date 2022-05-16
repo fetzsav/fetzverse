@@ -1,0 +1,21 @@
+#nl-back {
+    background: transparent;
+    padding-bottom:10px;
+    width:100%;
+/*  font-family: 'Lato', sans-serif;*/
+    color: #FDFCFB;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:lightgreen;
+}
+
+#nl-head{
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
