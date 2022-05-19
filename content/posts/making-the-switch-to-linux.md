@@ -14,7 +14,7 @@ Microsoft Windows uses a taskbar-based navigation, while OS X uses a dock-based 
 
 ### Linux Desktop Environments
 I began my Linux journey using Desktop Environments *(or DE's for short)*. These are the full package method of getting your desktop up and running as quickly as possible. Installing a popular DE will automatically configure most of your sound settings, mouse settings, etc. along with provide you some control panels to modify these. If you are coming from Windows or OS X, then a desktop environment will probably make your transition easier and allow you to compute within your comfort zone.
-Many Linux distributions have 'pre-flavored' versions with the desktop environment pre-installed. I do recommend using one of these *distribution flavors*, as the desktop environment will be configured to work with your specific operating system out-the-box. Yet, you can always install (and switch between) multiple different desktop environments if you can't decide on one. I'll give you a list of my favorite DE's.
+Many Linux distributions have 'pre-flavored' versions with the desktop environment pre-installed. I do recommend using one of these *distribution flavors*, as the desktop environment will be configured to work with your specific operating system out-the-box. Yet, you can always install (and switch between) multiple different desktop environments if you can't decide on one. I'll give you a list of my favorite DE's, however there are plenty more wonderful DE's available. If you don't see a specific DE on this list it does not necesarily mean it is good or bad... these are just the ones I have enjoyed using.
 
 #### GNOME - for OS X lovers
 ![gnome-desktop-png](/gnome-desktop.jpg)
@@ -30,7 +30,7 @@ The Cinnamon desktop ships by default with *Linux Mint*. I have not used the Cin
 
 #### Deepin - my new goto
 ![deepin-desktop-png](/deepin-desktop.png)
-**I love Deepin**. Previously, Deepin was a full distribution. Meaning, you couldn't install just the desktop environment onto your Ubuntu installation etc. I remember using the full Deepin distro a couple years ago, but not being able to give up Ubuntu at the time. These days, Deepin is available as a standalone desktop environment. So, now you can install it onto any distro you want. The design is sort of like a hybrid between Windows and OS X, but with some simple customizations you can make it more dock based or vice versa. All of the pre-bundled apps that come with the DE are sleek and pleasant to use. However I do reccomend it if you have a beefy machine.
+**I love Deepin**. Previously, Deepin was a full distribution. Meaning, you couldn't install just the desktop environment onto your Ubuntu installation etc. I remember using the full Deepin distro a couple years ago, but not being able to give up Ubuntu at the time. These days, Deepin is available as a standalone desktop environment. So, now you can install it onto any distro you want. The design is somewhat relatable to a hybrid between Windows and OS X. Albeit, with some simple customizations you can configure to be more dock based or vice versa. All of the pre-bundled apps that come with the DE are sleek and pleasant to use. However, I do recommend having beefier hardware.
 [Checkout Deepin](https://www.deepin.org/en/dde/)
 
 
@@ -65,8 +65,36 @@ There is also another reason that Linux gaming has a bright future. This is beca
 
 ## Workflow Productivity
 Sure, games are fun, and a Batman-themed desktop is pretty cool, but at the end of the day, functionality is the key ingredient. Your operating system needs to work for you, not against you. Your workflow and productivity should reap benefits by whichever operating system you decide to use. It has been a common misconception that Linux causes headaches and disturbs the user's workflow. Many people are afraid to switch to Linux due to thinking they're productivity will deterierate. I am here to inform you that none of that is true, and in fact, Linux will have a positive impact on your daily computing. 
-The largest determining factor of how Linux will affect your everyday computer needs is which flavor (or distribution) you decide to install. I believe that the narrative '*linux is hard to use*' does hold water in some cases, but is not inheriently an issue with Unix systems. Comparibly, OS X can be equally as challenging for someone who has only used Windows their whole life. If it is your first time using Linux, there will of course be a learning curve. Especialy if you choose to install a barebones distribution such as *Gentoo Linux*, you will probably not have a very good experience to begin with. You may even write off Linux as too much trouble than it's worth. However, on the flip side, if you are a veterened Linux user, installing *Gentoo* or *Arch* may give you the perfect amount of control over your system to allow it to work exactly the way you want, maximizing your productivity.
+The largest determining factor of how Linux will affect your everyday computer needs is which flavor (or distribution) you decide to install. I believe that the narrative '*Linux is hard to use*' does hold water in some cases, but is not inherently an issue with Unix systems. Comparably, OS X can be equally as challenging for someone who has only used Windows their whole life. If it is your first time using Linux, there will of course be a learning curve. Especially if you choose to install a barebones distribution such as *Gentoo Linux*, you will probably not have a very good experience to begin with. You may even write off Linux as too much trouble than it's worth. However, on the flip side, if you are a veterened Linux user, installing *Gentoo* or *Arch* may give you the perfect amount of control over your system to allow it to work exactly the way you want, maximizing your productivity.
 
 ### Picking your Distribution
-To begin using Linux, you will need to decide upon a distribution to install. Since Linux is completely open source, many different organizations have developed their own interpretation of how the operating system should run. Linux, by itself, is just the kernal. The kernal is basically the core of the operating system that handles computations. Graphical interfaces, terminal emulators, package managers, and system services are just some of the other things that are needed for a functional daily-use operating system. This is where distributions come into the picture. Distributions take on the responsibility of bundling 
+To begin using Linux, you will need to decide upon a distribution to install. Since Linux is completely open source, many different organizations have developed their own interpretation of how the operating system should run. Linux, by itself, is just the kernel. The kernel is basically the core of the operating system that handles computations. However, you will still need some software to make the operating system usable such as a graphical interface, terminal emulator, file browser, and networking tools. This is where distributions come into the picture. Distributions take on the responsibility of bundling the necessary software and packages required for an enjoyable user experience. Each distribution comes preinstalled with their preferred applications for file managers, browsers, network tools, control panels, calculators, and more. Needless to say, you can install any substitutional or additional software alongside any distribution.
+
+Picking your distribution can be tricky for newcomers. There is a significant amount of Linux distro's available, which can be overwhelming at first. The key differences between distributions is **A)** the target audience *and* **B)** default package manager. Besides these, there is no real *best* distro, as it is all user preference. I am going to run you through some of the distributions I have tried and let you know what I think.
+
+#### Ubuntu - Everyone's Hoe
+You've probably heard about Ubuntu. Ubuntu is the most popular Linux distribution available. It is based on Debian, and uses APT as it's package manager. APT is a lovely package manager that is easy to get used to. When I first began using Linux, Ubuntu was my goto. I could always get things to work on Ubuntu that I was unable to get to work on other distributions. Ubuntu ships with GNOME *desktop environment* by default, however there are other prebuilt flavors available for whichever *DE* you would like to be default on your system. This is one of the great parts about Ubuntu... everything is preconfigured, even for whichever flavor *DE* you may want. This makes Ubuntu a wonderful distro for beginners and experts alike.
+
+[Ubuntu's Website](https://ubuntu.com/)
+
+[KDE Ubuntu](https://kubuntu.org/)
+
+[xUbuntu](https://xubuntu.org/)
+
+[All Flavors](https://xubuntu.org/)
+
+#### Linux Mint - For Windows Users
+Linux Mint goes hand in hand with Cinnamon desktop. Cinnamon is a product of Linux Mint, so the compatibility is seamless. I do not enjoy using the taskbar-based desktop environment such as Window's. However, if you do, this is probably the best distribution for you. Linux Mint is actually based on Ubuntu, so most guides you may find for Ubuntu will probably work on Mint as well. I must say, the pre-shipped applications are especially sleek and a pleasure to use. I definitely recommend giving Mint a try... and if you aren't a fan of *Cinnamon*, they also offer a *MATE* and *XFCE* flavor.
+[Linux Mint](https://www.linuxmint.com/)
+
+#### Arch Linux - For Power Users
+Arch Linux is a minimal-based system. This means that most of the configuration depends on the user to setup. Arch does not come with hardly any programs preinstalled. The user is responsible for installing most everything. However, the Arch wiki is one of the best Linux wiki's available, and probably the **best** part about Arch. The installation process is slightly tedious, but the wiki walks you through everything and makes it simple. After getting your first Arch installation up and running... you will have a much better knowledge of how the Linux operating system works. I have been using Arch for some time now as my daily driver on my desktop and laptop, and I will be sticking with Arch for the foreseeable future. Something to also mention is that Arch uses a **rolling release model**. This means that there are no "major" updates to the distribution that may require you to install a new version. Instead, Arch stays on the cutting edge with small and frequent updates which are installed on the fly. If you have some Linux experience, I definitely recommend going through the Arch installation process and trying out the **Pacman** package manager.
+[Arch Linux](https://archlinux.org/)
+
+
+
+
+
+
+
 
