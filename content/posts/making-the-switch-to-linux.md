@@ -50,6 +50,7 @@ Most functionality of the window manager is accomplished using the special key (
 This may seem overwhelming at first, but surprisingly doesn't take very long to learn. Once the muscle memory kicks in, your workflow is noticeably more fluid and productive. If you have never used a window manager before, I recommend trying one to see if you have the same experience. Switching back to desktop environments feels clunky and slow now.
 
 #### Themeing Capabilities:
+I have not performed much themeing at all on my window manager installation. However, some of the sleekest and most unique Linux desktops use a window manager. You can achieve wonderful results with a little bit of a time and patience. If you are interested in fully themeing out your Desktop, checkout [This Subreddit](https://reddit.com/r/unixporn)
 
 ## GPU Support and Gaming
 Before switching my daily driver to Linux, I was using Microsoft's Windows. The biggest reason I was using Windows was for support of my (newer) model video cards. Two of the desktop computers in my house have Nvidia 30 series GPUs in the system. If you are unaware... the 30 series are the latest model cards available from Nvidia. I also enjoy playing video games, hence, the video cards. Linux gaming has not been the best option for gamers in the past years, that is not a secret. On the previous occasions that I have tried to switch my daily-computers to Linux, driver incompatibility and unsupported game titles have eventually forced me back onto Windows.
@@ -88,13 +89,13 @@ Linux Mint goes hand in hand with Cinnamon desktop. Cinnamon is a product of Lin
 [Linux Mint](https://www.linuxmint.com/)
 
 #### Arch Linux - For Power Users
-Arch Linux is a minimal-based system. This means that most of the configuration depends on the user to setup. Arch does not come with hardly any programs preinstalled. The user is responsible for installing most everything. However, the Arch wiki is one of the best Linux wiki's available, and probably the **best** part about Arch. The installation process is slightly tedious, but the wiki walks you through everything and makes it simple. After getting your first Arch installation up and running... you will have a much better knowledge of how the Linux operating system works. I have been using Arch for some time now as my daily driver on my desktop and laptop, and I will be sticking with Arch for the foreseeable future. Something to also mention is that Arch uses a **rolling release model**. This means that there are no "major" updates to the distribution that may require you to install a new version. Instead, Arch stays on the cutting edge with small and frequent updates which are installed on the fly. If you have some Linux experience, I definitely recommend going through the Arch installation process and trying out the **Pacman** package manager.
+Arch Linux is a minimal-based system. This means that most of the configuration depends on the user to setup. Arch does not come with hardly any programs preinstalled. The user is responsible for installing most everything. However, the Arch wiki is extremely helpful. Pretty much every software I have needed to use has a full wiki page available on the official Arch wiki. I can't deny, this feels like an advantage as an Arch user, and is probably the best part about Arch. The installation process is slightly tedious, but the wiki walks you through everything and makes it simple. Even after just completeing the installation process, you will have a much better knowledge of how the Linux operating system works. I have been using Arch for some time now as my daily driver on my desktop and laptop, and I will be sticking with Arch for the foreseeable future. Something to also mention is that Arch uses a **rolling release model**. This means that there are no "major" updates to the distribution that may require you to install a new version. Instead, Arch stays on the cutting edge with small and frequent updates which are installed on the fly using the *Pacman** package manager. If you have some Linux experience, I definitely recommend going through the Arch installation process and giving it a shot.
 [Arch Linux](https://archlinux.org/)
 
 
 
-
-
+## Break it Down
+Convincing someone to use Linux is normally an inevitable task. Most Linux users go down the rabbit hole out of self interest. I hope that this article happens to convince some people to give Linux a try. Especially if you never have before, Linux can be intimidating. It takes time to learn the in's and out's of how things work, although it will increase your computing skills and productivity. I definitely plan to release more articles and tutorials regarding Linux, and I will update this page with those links. 
 
 
 
