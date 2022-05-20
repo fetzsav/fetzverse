@@ -4,9 +4,11 @@ title: Fetzverse
 theme: PaperMod
 googleAnalytics: "G-GPWZ90MVWH"
 params:
+   env: 'production'
+   images: 'avatar.gif'
    ShowNewsLetter: true
    homeInfoParams:
-      Title: '👋Hi'
+      Title: 'FetzVerse'
    socialIcons:
         - name: twitter
           url: "https://twitter.com/fetzeth"

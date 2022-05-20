@@ -4,9 +4,22 @@
     <title>Posts on Fetzverse</title>
     <link>https://fetzverse.com/posts/</link>
     <description>Recent content in Posts on Fetzverse</description>
+    <image>
+      <url>https://fetzverse.com/97</url>
+      <link>https://fetzverse.com/97</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fetzverse.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 May 2022 15:02:30 -0400</lastBuildDate><atom:link href="https://fetzverse.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>You Should Switch to GNU/Linux</title>
+      <link>https://fetzverse.com/posts/making-the-switch-to-linux/</link>
+      <pubDate>Sat, 14 May 2022 15:02:30 -0400</pubDate>
+      
+      <guid>https://fetzverse.com/posts/making-the-switch-to-linux/</guid>
+      <description>It is important to have an operating system that you enjoy using. It should be able to do everything you need it to do without causing any distractions. Chances are, you are probably using Microsoft Windows, or Apple&amp;rsquo;s OS X. These operating systems have dominated the commercial market and are pre-shipped with pretty much any PC you will buy in a store. It is easy to continue using these operating systems simply because you are familiar with it and you know what to expect.</description>
+    </item>
+    
     <item>
       <title>Twitter&#39;s Powerful API - Too Powerful?</title>
       <link>https://fetzverse.com/posts/powerful-twitter/</link>

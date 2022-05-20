@@ -1,11 +1,22 @@
 ---
-title: "Making the Switch to Linux"
+title: "You Should Switch to GNU/Linux"
 date: 2022-05-14T15:02:30-04:00
-draft: true
+draft: false
+showToc: true
+cover:
+    image: "/gnupenguin.png"
+    alt: "GNU/Linux"
+    caption: "GNU Penguin"
+    relative: false
+    linkFullImages: true
+
 ---
 
-It is important to have an operating system that you enjoy using. It should be able to do everything you need it to do without causing any distractions. Chances are, you are probably using Microsoft Windows, or Apple's OS X. These operating systems have dominated the commercial market and are pre-shipped with pretty much any PC you will buy in a store. It is easy to continue using these operating systems simply because you are familiar with it and you know what to expect. However, it is crucial that our computers work to the best of their ability and do not cause disturbances in our workflow. I have been reluctant to make the switch to Linux as my daily desktop driver, as I was unsure how it would affect my workflow and the applications I use. After using Linux on all of my machines for the past 3 months, I can affirmatively say... I'll never go back to a different OS.
+
+It is important to have an operating system that you enjoy using. It should be able to do everything you need it to do without causing any distractions. Chances are, you are probably using Microsoft Windows, or Apple's OS X. These operating systems have dominated the commercial market and are pre-shipped with pretty much any PC you will buy in a store. It is easy to continue using these operating systems simply because you are familiar with it and you know what to expect. However, it is crucial that our computers work to the best of their ability and do not cause disturbances in our workflow. In the past, I have been reluctant to make the switch to Linux as my daily desktop driver, as I was unsure how it would affect my workflow and the applications I use. I went back and forth between Linux installations and Windows for some time, before finally settling with GNU/Linux for good. I think that part of the reasoning for this is due to how well the GNU/Linux ecosystem has flourished over the years. There is a vast amount of resources available to help you along your GNU/Linux journey. 
 In this article, I am going to share some of the awesome things I love about Linux, and why you should consider making the switch.
+
+**Note:** I will be referring to the *'GNU/Linux'* operating system as simply *'Linux'* multiple times throughout this article. However, I would like to acknowledge the hard work of the GNU project... from which the *'Linux'* operating system is derived. I don't know all of the juicy details... but if you want to learn more, visit [GNU.org's Linux & GNU](https://www.gnu.org/gnu/linux-and-gnu.html) article. For the sake of this article, *'Linux'* and *'GNU/Linux'* are both referring to the same *'Linux'* we all know and love.
 
 
 ## Look & Feel
@@ -21,7 +32,9 @@ Many Linux distributions have 'pre-flavored' versions with the desktop environme
   GNOME has been one of my favorite desktop environment since I began using Linux in ~2013. It is the default desktop environment that ships with Ubuntu these days, and for good reason. It is a highly customizable desktop that can achieve a sleek and modern look. Out of the box it may seem a little bland, but there is a great community behind the project that continues to release content. You can combine the GNOME desktop with some popular OS X-inspired themes to achieve a nice Mac replica desktop.
 [GNOME Website](https://gnome.org)
 
-### xfce - for lightweight systems
+#### xfce - for lightweight systems
+![xfce-desktop-webp](/xfcedesktop.webp)
+XFCE is my personal favorite for an especially lightweight machine. If you are running ancient hardware, XFCE is definitely worth checking out. The desktop is quick and easy to get used to and offers plenty of customization. There is even ways to setup a dock. If you are looking for something even more lightweight, checkout **LXDE**.
 
 
 #### Cinnamon - for Windows lovers
@@ -74,6 +87,7 @@ To begin using Linux, you will need to decide upon a distribution to install. Si
 Picking your distribution can be tricky for newcomers. There is a significant amount of Linux distro's available, which can be overwhelming at first. The key differences between distributions is **A)** the target audience *and* **B)** default package manager. Besides these, there is no real *best* distro, as it is all user preference. I am going to run you through some of the distributions I have tried and let you know what I think.
 
 #### Ubuntu - Everyone's Hoe
+![ubuntu-logo](/ubuntu-logo.png#center)
 You've probably heard about Ubuntu. Ubuntu is the most popular Linux distribution available. It is based on Debian, and uses APT as it's package manager. APT is a lovely package manager that is easy to get used to. When I first began using Linux, Ubuntu was my goto. I could always get things to work on Ubuntu that I was unable to get to work on other distributions. Ubuntu ships with GNOME *desktop environment* by default, however there are other prebuilt flavors available for whichever *DE* you would like to be default on your system. This is one of the great parts about Ubuntu... everything is preconfigured, even for whichever flavor *DE* you may want. This makes Ubuntu a wonderful distro for beginners and experts alike.
 
 [Ubuntu's Website](https://ubuntu.com/)
@@ -85,17 +99,20 @@ You've probably heard about Ubuntu. Ubuntu is the most popular Linux distributio
 [All Flavors](https://xubuntu.org/)
 
 #### Linux Mint - For Windows Users
+![mint-logo](/mint-logo.png#center)
+
 Linux Mint goes hand in hand with Cinnamon desktop. Cinnamon is a product of Linux Mint, so the compatibility is seamless. I do not enjoy using the taskbar-based desktop environment such as Window's. However, if you do, this is probably the best distribution for you. Linux Mint is actually based on Ubuntu, so most guides you may find for Ubuntu will probably work on Mint as well. I must say, the pre-shipped applications are especially sleek and a pleasure to use. I definitely recommend giving Mint a try... and if you aren't a fan of *Cinnamon*, they also offer a *MATE* and *XFCE* flavor.
 [Linux Mint](https://www.linuxmint.com/)
 
 #### Arch Linux - For Power Users
+![arch-logo](/arch-logo.png#center)
 Arch Linux is a minimal-based system. This means that most of the configuration depends on the user to setup. Arch does not come with hardly any programs preinstalled. The user is responsible for installing most everything. However, the Arch wiki is extremely helpful. Pretty much every software I have needed to use has a full wiki page available on the official Arch wiki. I can't deny, this feels like an advantage as an Arch user, and is probably the best part about Arch. The installation process is slightly tedious, but the wiki walks you through everything and makes it simple. Even after just completeing the installation process, you will have a much better knowledge of how the Linux operating system works. I have been using Arch for some time now as my daily driver on my desktop and laptop, and I will be sticking with Arch for the foreseeable future. Something to also mention is that Arch uses a **rolling release model**. This means that there are no "major" updates to the distribution that may require you to install a new version. Instead, Arch stays on the cutting edge with small and frequent updates which are installed on the fly using the *Pacman** package manager. If you have some Linux experience, I definitely recommend going through the Arch installation process and giving it a shot.
 [Arch Linux](https://archlinux.org/)
 
 
 
 ## Break it Down
-Convincing someone to use Linux is normally an inevitable task. Most Linux users go down the rabbit hole out of self interest. I hope that this article happens to convince some people to give Linux a try. Especially if you never have before, Linux can be intimidating. It takes time to learn the in's and out's of how things work, although it will increase your computing skills and productivity. I definitely plan to release more articles and tutorials regarding Linux, and I will update this page with those links. 
+Convincing someone to use GNU/Linux is normally an inevitable task. Most Linux users go down the rabbit hole out of self interest. I hope that this article happens to convince some people to give Linux a try. Especially if you never have before, Linux can be intimidating. It takes time to learn the in's and out's of how things work, although it will increase your computing skills and productivity. I definitely plan to release more articles and tutorials regarding Linux, and I will update this page with those links. 
 
 
 
