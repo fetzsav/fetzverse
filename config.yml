@@ -5,6 +5,7 @@ theme: PaperMod
 googleAnalytics: "G-GPWZ90MVWH"
 params:
    env: 'production'
+   comments: true
    images: 'avatar.gif'
    ShowNewsLetter: true
    homeInfoParams:
