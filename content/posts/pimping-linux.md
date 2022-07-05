@@ -93,11 +93,11 @@ cd polybar-themes
 chmod +x setup.sh
 ./setup.sh
 {{< /highlight >}}
-Run through the installer script. You can pick Bitmap or Standard versions, it is up to you. We will come back to configure Polybar later. In the meantime, let's go ahead and set everything else up. 
+Run through the installer script. You can pick Bitmap or Standard versions, it is up to you. 
 
 ### i3
 After i3 finishes installing, you should be able to select it as your desktop environment from your login screen (check the bottom right or left of the screen).
-Before logging into i3, let's make sure our configuration is set properly and that we know how to use it. i3's configuration file can be found in the following location:
+Before logging into i3, let's make sure our configuration is set properly and that we know the basics. i3's configuration file can be found in the following location:
 {{< highlight go "linenos=table,linenostart=1" >}}
 ~/.config/i3/config
 {{< /highlight >}}
@@ -124,3 +124,22 @@ By default, the Picom configuration file is not going to be present. Picom does 
 {{<highlight go "linenos=table,linenostart=1" >}}
 cp /etc/xdg/picom.conf ~/.config/picom/picom.conf
 {{</highlight>}}
+
+Go ahead and open up the Picom configuration file. The file has explanatory comments, so feel free to set it how you prefer.
+The following lines are the main lines that are responsible for how my configuration looks
+
+{{< highlight go "linenos=table,linenostart=1" >}}
+##shadow behind windows to add depth
+shadow = true;
+shadow-radius = 20;
+##transparency on unfocused windows
+inactive-opacity = 0.95;
+
+##rounded corners
+corner-radius = 15
+rounded-corners-exclude = [
+    "window_type = 'dock'",
+    "window_type = 'desktop'"
+]
+{{< /highlight >}}
+
