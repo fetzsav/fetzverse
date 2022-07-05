@@ -8,7 +8,7 @@ draft: true
 
 
 
-Many users are initially attracted to a Linux operating systems due to screenshots of other user's pimped-out desktops they have seen online. You can checkout some of the *best* of these desktops on [r/UnixPorn](https://reddit.com/r/unixporn). This high level of customization is not typically available on Windows or OS X. However, even on Linux, it is not as easy as simply *'clicking a button'*. You could spend many hours tweaking config files to customize your desktop to your taste. In this guide, we will be abstracting away as much of the configuration as possible, and focusing on getting you setup with a sexy desktop quickly. After following along with this article and completing all of the steps, you will have a much greater knowledge about how the appearance of your Linux desktop works and how to make any changes you may want. Anyways, let's get started.
+The ability to customize and theme the Linux desktop is one of the key attracting features of the operating system. You can checkout some of the *best* of these desktops on [r/UnixPorn](https://reddit.com/r/unixporn). This high level of customization is not typically available on Windows or OS X. However, even on Linux, it is not as easy as simply *'clicking a button'*. You could spend many hours tweaking config files to customize your desktop to your taste. Yet, on Linux, the process isn't exactly an easy task. Nobody is there to tell you which packages to install or which configurations to set in order to achieve that *riced* desktop feeling. In this guide, we will be abstracting away as much of the configuration as possible, and focusing on getting you setup with a sexy desktop quickly. After following along with this article and completing all of the steps, you will have a much greater knowledge about how the appearance of your Linux desktop works and how to make any changes you may want. Anyways, let's get started.
 
 ## **Software We Will Be Using**
 1. **{{<underline text="i3wm-gaps">}}** - Window Manager  
@@ -24,6 +24,7 @@ Before making customization changes, we are going to install each package first.
 
 
 ### Polybar - Task/Status Bar
+Polybar is one of the most versatile status bar packages available. It comes with all of the modules that you may want in your status bar pre-installed into the package. All of Polybar's settings are stored in it's configuration folder inside your *~/.config* directory. There are tons of really cool things you can accomplish by just looking around and making edits within this directory.
 ####  Arch
 {{< highlight go "linenos=table,linenostart=1" >}}
 sudo pacman -Syu polybar
@@ -67,6 +68,20 @@ sudo apt update
 sudo apt install rofi
 {{< /highlight >}}
 
+### Kitty - Terminal
+Kitty is one of my favorite terminals. It comes installed with a theme-manager full of tons of popular color schemes. It supports many commonly needed terminal feautures out of the box with no configuration. I am sure you can apply your desired color scheme to whichever terminal emulator you enjoy using if you do not want to use Kitty.
+
+#### Arch
+{{< highlight go "linenos=table,linenostart=1" >}}
+sudo pacman -Syu kitty
+{{< /highlight >}}
+#### Ubuntu
+{{< highlight go "linenos=table,linenostart=1" >}}
+sudo apt install kitty
+{{< /highlight >}}
+
+
+
 ### Picom - Transparency & Rounded Corners
 Picom is the final touch to your desktop appearance to really start making things look good. Picom has quite a few different things that it can accomplish. You can find all of the available settings on their Github page. Although, we will only be using Picom for transparency and 'rounded corners' for our windows.
 #### Arch
@@ -85,7 +100,7 @@ Polybar works nicely out of the box. Configuration options can be found at the f
 {{< highlight go>}}
 ~/.config/polybar
 {{< /highlight >}}
-However, we are going to be downloading a theme pack to give you some more options. The theme pack we will be using is from Github and can be found at [adi1090x/polybar-themes](https://github.com/adi1090x/polybar-themes)
+However, we are going to be downloading a theme pack to give you some more options. The theme pack we will be using is from Github and can be found at [adi1090x/polybar-themes](https://github.com/adi1090x/polybar-themes).
 Installing these themes is easy. CD into your *Downloads* directory and clone the repository. Chmod the install script that is inside and run it.
 {{< highlight go "linenos=table,linenostart=1" >}}
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
@@ -93,7 +108,40 @@ cd polybar-themes
 chmod +x setup.sh
 ./setup.sh
 {{< /highlight >}}
-Run through the installer script. You can pick Bitmap or Standard versions, it is up to you. 
+The installer script is self-explanatory. It places the theme files into *~./config/polybar*.  
+
+Everyone will have their personal preference on their favorite theme. You can launch a specific theme with the following command  
+{{< highlight go "linenos=table,linenostart=1" >}}
+*bash ~/.config/polybar/launch.sh --material*
+{{< /highlight >}}
+
+After finding a theme that you like, you can edit it's layout to fit your liking. Simply CD into the theme's directory and look around the configuration files. The main two files you are going to be wanting to edit are *config.ini* and *colors.ini*. You can change the bar's modules & order by editing the following lines. I've included my configuration here for reference. Another line to notice is the *radius* lines. This is how I achieve the cohesive rounded-corner look.
+{{< highlight go "linenos=table,linenostart=1" >}}
+[bar/top]
+inherit = bar/main
+border-bottom-size = 2
+border-bottom-color = ${color.primary}
+modules-left = launcher sep title
+modules-center = cpu sep memory sep filesystem sep updates
+modules-right = color-switch sep battery sep checknet sep sysmenu
+enable-ipc = true
+radius-bottom = 10.0
+
+
+[bar/bottom]
+radius-top = 10.0
+inherit = bar/main
+bottom = true
+border-top-size = 2
+border-top-color = ${color.primary}
+modules-left = launcher workspaces
+modules-center =
+modules-right = volume sep date
+enable-ipc = true
+{{< /highlight >}}
+
+
+
 
 ### i3
 After i3 finishes installing, you should be able to select it as your desktop environment from your login screen (check the bottom right or left of the screen).
@@ -142,4 +190,48 @@ rounded-corners-exclude = [
     "window_type = 'desktop'"
 ]
 {{< /highlight >}}
+
+Picom can be started using the command *picom -b*. In the window manager section we added this to our i3 config, which will execute the command once i3 starts.
+{{< highlight go "linenos=table,linenostart=1" >}}
+##./config/i3/config
+exec --no-stratup-id picom -b
+{{< /highlight >}}
+
+
+
+### Kitty
+
+The Kitty terminal works great out of the box as well. The only thing that needs configuring is the theme, which Kitty comes pre-installed with tons of themes to pick from. For the sake of this tutorial, we will be sticking with the "Catpputtin" theme. You can open Kitty's theme manager with the following command:
+{{< highlight go "linenos=table,linenostart=1" >}}
+kitty +kitten themes
+{{< /highlight >}}
+Hit the '/' key to search for the "Catpputtin" theme. Confirm it with 'M' and you're set!  
+
+One final touch is to set transparency via. the Kitty configuration. This will ensure that only the background of the terminal is transparent and not the terminal font itself. You can find your Kitty configuration at the following location: *~/.config/kitty/kitty.conf*
+{{< highlight go "linenos=table,linenostart=1" >}}
+#~/.config/kitty/kitty.conf
+background_opacity 0.85
+{{< /highlight >}}
+Find the *background_opacity* line in the config and set it to your preferred value.
+
+
+### GTK - Final Touches
+Lastly, we want to theme our GTK engine so that various GUI applications that use GTK are themed accordingly as well.
+I am opting for the Catpputtin theme, so we will be using their GTK port, which can be found [Here](https://github.com/catppuccin/gtk).
+Visit the [releases page](https://github.com/catppuccin/gtk/releases) and pick your color variation. After downloading, extract the zip and move the contents to your *~/.themes* directory. Finally, edit the GTK configuration file which can be found at */usr/share/gtk-2.0/gtkrc*
+{{< highlight go "linenos=table,linenostart=1" >}}
+##/usr/share/gtk-2.0/gtkrc
+gtk-theme-name = "Catpputtin"
+{{< /highlight >}}
+Now, GUI applications such as nautilus should be themed accordingly (after restart).
+
+
+
+### Wrapping it Up
+After completing this tutorial, you should have a much greater understanding of Linux's desktop environment and how each piece fits together. From here, your possibilites are endless to how you can customize your desktop. You can find some of the latest designs on [reddit/r/UnixPorn](reddit.com/r/unixporn) to inspire your next creation. With enough time, you can really make your desktop stand out. I look forward to writing more tutorials related to this subject that I have in mind. I have also been exploring the idea of a "Theme Manager" software that works with these common appearance-based Linux packages and gives you an easy way to save/load themes, as well as import/export them. In the meantime, 
+
+Best Regards, Fetzer
+
+
+
 
