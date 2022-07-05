@@ -2,13 +2,20 @@
 title: "Pimping Linux"
 date: 2022-06-28T11:12:40-04:00
 draft: true
+showToc: true
+cover:
+    image: "/linuxtheme.png"
+    alt: "Linux Themes"
+    caption: "Linux Themes"
+    relative: false
+    linkFullImages: true
 ---
 
 
 
 
 
-The ability to customize and theme the Linux desktop is one of the key attracting features of the operating system. You can checkout some of the *best* of these desktops on [r/UnixPorn](https://reddit.com/r/unixporn). This high level of customization is not typically available on Windows or OS X. However, even on Linux, it is not as easy as simply *'clicking a button'*. You could spend many hours tweaking config files to customize your desktop to your taste. Yet, on Linux, the process isn't exactly an easy task. Nobody is there to tell you which packages to install or which configurations to set in order to achieve that *riced* desktop feeling. In this guide, we will be abstracting away as much of the configuration as possible, and focusing on getting you setup with a sexy desktop quickly. After following along with this article and completing all of the steps, you will have a much greater knowledge about how the appearance of your Linux desktop works and how to make any changes you may want. Anyways, let's get started.
+The ability to customize and theme the Linux desktop is one of the key attracting features of the operating system. You can checkout some of the *best* of these desktops on [r/UnixPorn](https://reddit.com/r/unixporn). This high level of customization is not typically available on Windows or OS X. However, even on Linux, it is not as easy as simply *'clicking a button'*. You could spend many hours tweaking config files to customize your desktop to your taste. Nobody is there to tell you which packages to install or which configurations to set in order to achieve that *riced* desktop feeling. In this guide, we will be abstracting away as much of the configuration as possible, and focusing on getting you setup with a sexy desktop quickly. After following along with this article and completing all of the steps, you will have a much greater knowledge about how the appearance of your Linux desktop works and how to make any changes you may want. Anyways, let's get started.
 
 ## **Software We Will Be Using**
 1. **{{<underline text="i3wm-gaps">}}** - Window Manager  
@@ -94,7 +101,7 @@ sudo apt install picom
 {{< /highlight >}}
 
 ## Configuration
-
+![lets-begin-image](/letsbegin.gif)
 ### Polybar
 Polybar works nicely out of the box. Configuration options can be found at the following location:
 {{< highlight go>}}
