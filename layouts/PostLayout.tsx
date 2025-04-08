@@ -5,6 +5,7 @@ import Comments from '@/components/Comments'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
+// Use the Image component already imported (likely pliny/Image wrapper)
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -30,7 +31,8 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
-  const { filePath, path, slug, date, title, tags } = content
+  // --- MODIFICATION: Destructure 'image' from content ---
+  const { filePath, path, slug, date, title, tags} = content
   const basePath = path.split('/')[0]
 
   return (
@@ -54,8 +56,25 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 <PageTitle>{title}</PageTitle>
               </div>
             </div>
+            {/* --- START: Added Cover Image Section --- */}
+            {image && ( // Conditionally render only if image exists in frontmatter
+              <div className="mt-8 mb-8 sm:mt-10 sm:mb-10">
+                {' '}
+                {/* Adjust margins as needed */}
+                <Image
+                  src={image}
+                  alt={`${title} cover image`} // Dynamic alt text
+                  width={1200} // Set desired width (adjust for your design)
+                  height={630} // Set desired height (e.g., 1.91:1 aspect ratio)
+                  className="w-full rounded-lg object-cover object-center" // Basic styling (adjust)
+                  priority // Prioritize loading if image is above the fold
+                />
+              </div>
+            )}
+            {/* --- END: Added Cover Image Section --- */}
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0 dark:divide-gray-700">
+            {/* Author details column */}
             <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
               <dt className="sr-only">Authors</dt>
               <dd>
@@ -63,7 +82,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   {authorDetails.map((author) => (
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
-                        <Image
+                        <Image // Using the same Image component for consistency
                           src={author.avatar}
                           width={38}
                           height={38}
@@ -93,8 +112,11 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 </ul>
               </dd>
             </dl>
+            {/* Main content column */}
             <div className="divide-y divide-gray-200 xl:col-span-3 xl:row-span-2 xl:pb-0 dark:divide-gray-700">
+              {/* Post content */}
               <div className="prose dark:prose-invert max-w-none pt-10 pb-8">{children}</div>
+              {/* Discuss/Edit links */}
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 <Link href={discussUrl(path)} rel="nofollow">
                   Discuss on Twitter
@@ -102,6 +124,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 {` • `}
                 <Link href={editUrl(filePath)}>View on GitHub</Link>
               </div>
+              {/* Comments section */}
               {siteMetadata.comments && (
                 <div
                   className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300"
@@ -111,8 +134,10 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 </div>
               )}
             </div>
+            {/* Footer section (Tags, Prev/Next, Back link) */}
             <footer>
               <div className="divide-gray-200 text-sm leading-5 font-medium xl:col-start-1 xl:row-start-2 xl:divide-y dark:divide-gray-700">
+                {/* Tags */}
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
@@ -125,6 +150,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                     </div>
                   </div>
                 )}
+                {/* Prev/Next links */}
                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && prev.path && (
@@ -150,6 +176,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   </div>
                 )}
               </div>
+              {/* Back link */}
               <div className="pt-4 xl:pt-8">
                 <Link
                   href={`/${basePath}`}
