@@ -1,4 +1,4 @@
-![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
+![tailwind-nextjs-banner](/images/public/static/images/twitter-card.png)
 
 # Tailwind Nextjs Starter Blog
 
@@ -332,9 +332,9 @@ Consider removing the following features that cannot be used in a static build:
 
 ## Frequently Asked Questions
 
-- [How can I add a custom MDX component?](/faq/custom-mdx-component.md)
-- [How can I customize the `kbar` search?](/faq/customize-kbar-search.md)
-- [Deploy with docker](/faq/deploy-with-docker.md)
+- [How can I add a custom MDX component?](/images/faq/custom-mdx-component.md)
+- [How can I customize the `kbar` search?](/images/faq/customize-kbar-search.md)
+- [Deploy with docker](/images/faq/deploy-with-docker.md)
 
 ## Support
 
